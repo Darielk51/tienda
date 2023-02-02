@@ -1,0 +1,11 @@
+
+
+.block{
+    background-color: bisque;
+    border: 20px solid gray;
+    padding:20px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    
+}
