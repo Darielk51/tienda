@@ -1,0 +1,74 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 feb. 2023, 19:13:30
+    Author     : jvlan
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    background-image: url(../imagenes/vv.jpg);
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position:Relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+.nav{
+    padding-left: 60px;
+    display: inline-block;
+    position: relative; 
+    left: 75%;
+
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#333;
+}
+.content.h1 {
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:#E68BFA;
+}
+.content p {
+    font-size: 20px;
+    color:#cc0033;
+}
+content {
+    margin-top:  10%;
+    margin-left: 10%;
+}
+.fondo{
+    height: 50%;
+    position: absolute;
+    right: 160px; 
+    bottom: 50px;
+}
