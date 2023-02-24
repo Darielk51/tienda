@@ -1,5 +1,5 @@
 
-package com.Tienda.Tienda.entity;
+package Tienda.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

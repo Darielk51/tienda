@@ -1,6 +1,6 @@
-package com.Tienda.Tienda.service;
+package Tienda.service;
 
-import com.Tienda.Tienda.entity.Pais;
+import Tienda.entity.Pais;
 import java.util.List;
 import org.springframework.stereotype.Service;
 

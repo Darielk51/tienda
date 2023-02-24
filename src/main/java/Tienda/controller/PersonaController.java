@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.Tienda.Tienda.controller;
+package Tienda.controller;
 
 import ch.qos.logback.core.model.Model;
-import com.Tienda.Tienda.entity.Pais;
-import com.Tienda.Tienda.entity.Persona;
-import com.Tienda.Tienda.service.IPaisService;
-import com.Tienda.Tienda.service.IPersonaService;
+import Tienda.entity.Pais;
+import Tienda.entity.Persona;
+import Tienda.service.IPaisService;
+import Tienda.service.IPersonaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +35,7 @@ public class PersonaController {
 
     @GetMapping("/personaN")
     public String crearPerona (Model model) {
-        List<Pais> listaPaises = personaService.liscountry();
+        List<Pais> listaPaises = paisService.liscountry();
         model.addAttribute("persona", new Persona());
         model.addAttribute("paises ", listaPaises);
         return "crear";

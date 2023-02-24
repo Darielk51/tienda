@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.Tienda.Tienda.entity;
+package Tienda.entity;
 
 import static com.fasterxml.jackson.databind.util.ClassUtil.name;
 import jakarta.persistence.Entity;
@@ -10,6 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import java.io.Serializable;
 
@@ -27,8 +28,8 @@ public class Persona implements Serializable {
     private String telefono; 
     private String gmail; 
     
-    @ManyToOnc
-    @JoinColumn(name-"paises_id")
+    @ManyToOne
+    @JoinColumn(name="paises_id")
     private Pais pais; 
 
     public long getId() {
