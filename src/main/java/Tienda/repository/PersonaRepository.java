@@ -4,21 +4,14 @@
  */
 package Tienda.repository;
 
+import Tienda.entity.Persona;
+import org.springframework.data.repository.CrudRepository;
+
 /**
  *
  * @author jvlan
  */
-public class PersonaRepository {
+public interface PersonaRepository extends CrudRepository<Persona,Long>{
 
-    public Object findById(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
-    public void deleteById(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public Object findAll(long id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }

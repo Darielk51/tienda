@@ -4,7 +4,6 @@
  */
 package Tienda.service;
 
-import Tienda.entity.Pais;
 import Tienda.entity.Persona;
 import Tienda.repository.PersonaRepository;
 import java.util.List;
@@ -15,12 +14,13 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author jvlan
  */
 public class PersonaService implements IPersonaService {
-@Autowired 
-private PersonaRepository personaRepository; 
-   
-@Override
+
+    @Autowired
+    private PersonaRepository personaRepository;
+
+    @Override
     public List<Persona> getAllPersona() {
-     return (List<Persona>)personaRepository.findAll();
+        return (List<Persona>) personaRepository.findAll();
     }
 
     @Override
@@ -29,23 +29,12 @@ private PersonaRepository personaRepository;
     }
 
     @Override
-    public void savePersona(Persona Persona) {
-         personaRepository.save(persona);
+    public void savePersona(Persona persona) {
+        personaRepository.save(persona);
     }
 
     @Override
     public void delete(long id) {
-         personaRepository.deleteById(id);
+        personaRepository.deleteById(id);
     }
-
-    @Override
-    public List<Pais> liscountry() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public List<Pais> getAllPerona() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }

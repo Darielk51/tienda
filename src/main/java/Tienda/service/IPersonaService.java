@@ -4,7 +4,6 @@
  */
 package Tienda.service;
 
-import Tienda.entity.Pais;
 import Tienda.entity.Persona;
 import java.util.List;
 
@@ -15,10 +14,6 @@ import java.util.List;
 public interface IPersonaService {
     public List<Persona> getAllPersona();
     public Persona getPersonaById (long id);
-    public void savePersona (Persona Persona);
+    public void savePersona (Persona persona);
     public void delete (long id);
-
-    public List<Pais> liscountry();
-
-    public List<Pais> getAllPerona();
 }
