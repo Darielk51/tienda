@@ -18,5 +18,7 @@ public class Userprincipal implements UserDetails{
     
     @override
     public Collection<? extends GrantedAuthority > get Autorities (){
-    List<GrantedAutoty> authority = new SimpleGrantedAuthority(p);}
+    List<GrantedAutoty> authority = new SimpleGrantedAuthority(p);
+    
+    }
 }
